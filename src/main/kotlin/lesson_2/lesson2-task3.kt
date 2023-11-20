@@ -1,15 +1,17 @@
 package lesson_2
 
+const val timeSize = 60
+
 fun main() {
-    val h1 = 9
-    val m1 = 39
-    val timeFirst = h1 * 60 + m1
+    val hourOfDeparture = 9
+    val minuteOfDeparture = 39
+    val timeDeparture = hourOfDeparture * timeSize + minuteOfDeparture
 
-    val timeSecond = 457
+    val travelTime = 457
 
-    val time = timeFirst + timeSecond
-    val hour = time / 60
-    val minutes = time % 60
+    val timeArrival = timeDeparture + travelTime
+    val hourOfArrival = timeArrival / timeSize
+    val minuteOfArrival = timeArrival % timeSize
 
-    println("$hour:$minutes")
+    println("$hourOfArrival:$minuteOfArrival")
 }
