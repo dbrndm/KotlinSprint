@@ -1,6 +1,6 @@
 package lesson_1
 
-const val sizeTime = 60
+const val SIZE_TIME = 60
 
 fun main() {
 /*
@@ -11,13 +11,13 @@ fun main() {
 
     val secondsFlight = 6480
 
-    val hour = secondsFlight / (sizeTime * sizeTime)
-    val hourRemainder = secondsFlight % (sizeTime * sizeTime) // остаток от деления
+    val hour = secondsFlight / (SIZE_TIME * SIZE_TIME)
+    val hourRemainder = secondsFlight % (SIZE_TIME * SIZE_TIME) // остаток от деления
 
-    val minutes = hourRemainder / sizeTime
-    val minutesRemainder = hourRemainder % sizeTime // остаток от деления
+    val minutes = hourRemainder / SIZE_TIME
+    val minutesRemainder = hourRemainder % SIZE_TIME // остаток от деления
 
-    val seconds = minutesRemainder / sizeTime
+    val seconds = minutesRemainder / SIZE_TIME
 
     val time = String.format("%02d:%02d:%02d", hour, minutes, seconds)
     println("Время, проведенное в космосе: $time")
